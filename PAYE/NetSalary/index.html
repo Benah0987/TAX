@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>Net Salary Calculator</h1>
+        <form>   
+    <!-- Input field for personal relief -->
+    <label for="personalRelief">Personal Relief:</label>
+    <input type="number" id="personalRelief" name="personalRelief" value="2400" disabled><br><br>
+
+<!-- Input field for insurance relief -->
+<label for="insuranceRelief">Insurance Relief:</label>
+<input type="number" id="insuranceRelief" name="insuranceRelief" value="5000" disabled><br><br>
+
+<!-- Input field for pension fund contribution -->
+<label for="pensionContribution">Pension Fund Contribution:</label>
+<input type="number" id="pensionContribution" name="pensionContribution"><br><br>
+
+<!-- Select dropdown for NHIF deduction -->
+<label for="nhifDeduction">NHIF Deduction:</label>
+<select id="nhifDeduction" name="nhifDeduction">
+	<option value="150">Up to 5,999</option>
+	<option value="300">6,000 - 7,999</option>
+	<option value="400">8,000 - 11,999</option>
+	<option value="500">12,000 - 14,999</option>
+	<option value="600">15,000 - 19,999</option>
+	<option value="750">20,000 - 24,999</option>
+	<option value="850">25,000 - 29,999</option>
+	<option value="900">30,000 - 34,999</option>
+	<option value="950">35,000 - 39,999</option>
+	<option value="1000">40,000 - 44,999</option>
+	<option value="1100">45,000 - 49,999</option>
+	<option value="1200">50,000 - 59,999</option>
+	<option value="1300">60,000 - 69,999</option>
+	<option value="1400">70,000 - 79,999</option>
+	<option value="1500">80,000 - 89,999</option>
+	<option value="1600">90,000 - 99,999</option>
+	<option value="1700">100,000 and above</option>
+</select><br><br>
+
+<!-- Input field for affordable housing relief -->
+<label for="housingRelief">Affordable Housing Relief:</label>
+<input type="number" id="housingRelief" name="housingRelief" value="9000"><br><br>
+
+<!-- Input field for owner occupier interest -->
+<label for="ownerInterest">Owner Occupier Interest:</label>
+<input type="number" id="ownerInterest" name="ownerInterest" value="25000"><br><br>
+
+<!-- Input field for disability exemption -->
+<label for="disabilityExemption">Disability Exemption:</label>
+<input type="number" id="disabilityExemption" name="disabilityExemption" value="150000"><br><br>
+
+<!-- Button to submit the form and calculate net salary -->
+<input type="submit" value="Calculate" onclick="calculateNetSalary(); return false;">
+</form>
+<!-- Paragraph element to display the net salary result -->
+<p id="netSalary"></p>
+
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+/* Set body background color */
+body {
+    background-color: #f0f0f0;
+  }
+  
+  /* Style for the calculator form */
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #ccc;
+    margin: 20px auto;
+    width: 500px;
+  }
+  
+  /* Style for the form labels */
+  label {
+    font-weight: bold;
+  }
+  
+  /* Style for the input fields */
+  input[type="number"], select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Style for the submit button */
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Style for the net salary output text */
+  #netSalary {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  

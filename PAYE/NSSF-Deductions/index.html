@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>NSSF Deduction Calculator</h1>
+    <p>NSSF New Rates:</p>
+    <table>
+      <tr>
+        <th>Tier</th>
+        <th>Pensionable Pay</th>
+      </tr>
+      <tr>
+        <td>I</td>
+        <td>Up to 6,000</td>
+      </tr>
+      <tr>
+        <td>II</td>
+        <td>6,001 - 18,000</td>
+      </tr>
+    </table>
+    <p>Under the old NSSF Act:</p>
+    <table>
+      <tr>
+        <th>Pay Frequency</th>
+        <th>Maximum Contribution (Ksh)</th>
+      </tr>
+      <tr>
+        <td>Monthly</td>
+        <td>400</td>
+      </tr>
+      <tr>
+        <td>Biweekly</td>
+        <td>200</td>
+      </tr>
+      <tr>
+        <td>Weekly</td>
+        <td>100</td>
+      </tr>
+    </table>
+    <form>
+      <label for="pensionable-pay">Pensionable Pay:</label>
+      <input type="number" id="pensionable-pay"><br><br>
+      <label for="tier">Tier:</label>
+      <select id="tier">
+        <option value="1">I</option>
+        <option value="2">II</option>
+      </select><br><br>
+      <button type="button" onclick="calculateNssfDeduction()">Calculate</button>
+    </form>
+    <p id="result"></p>
+
+    
+</body>
+</html>
